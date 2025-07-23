@@ -6,7 +6,7 @@ const port = process.env.PORT || 9000; // Important for Beanstalk
 app.use(express.json());
 
 app.get('/get', (req, res) => {
-  res.json({ msg: "success" });
+  res.json({ msg: "success" data:[{"name":"silla","age":30}]});
 });
 
 app.get('/', (req, res) => {
